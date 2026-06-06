@@ -1,0 +1,168 @@
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Card danh sách công việc chính */
+.task-card-main {
+    background-color: #f8fafc;
+    border-radius: 20px;
+    border: none;
+}
+
+/* Nút thêm mới màu tím */
+.btn-add-task {
+    background-color: #7c3aed !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 24px !important;
+    padding: 8px 20px !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-add-task:hover {
+    background-color: #6d28d9 !important;
+    transform: translateY(-1px);
+}
+
+/* Từng dòng công việc (Task Item) */
+.task-item {
+    background-color: white;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    padding: 16px;
+    margin-bottom: 16px;
+    transition: transform 0.2s ease;
+}
+
+.task-item:hover {
+    transform: translateY(-2px);
+}
+
+/* Các badge trạng thái màu xám nhạt */
+.badge-status {
+    background-color: #f3f4f6;
+    color: #4b5563;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Vòng tròn trạng thái (Status Circles) */
+.circle-todo {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #d1d5db;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.circle-inprogress {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #d1d5db;
+    border-top-color: #7c3aed;
+    border-right-color: #7c3aed;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.circle-done {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #7c3aed;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* Form thêm công việc */
+.form-card {
+    border-radius: 16px;
+    border: none;
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Các nút chọn Priority trong form */
+.btn-priority-high {
+    border: 2.5px solid #dc2626 !important;
+    color: #dc2626 !important;
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 6px 16px;
+    transition: all 0.2s;
+}
+
+.btn-priority-high.active {
+    background-color: #dc2626 !important;
+    color: white !important;
+}
+
+.btn-priority-medium {
+    border: 2.5px solid #d97706 !important;
+    color: #d97706 !important;
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 6px 16px;
+    transition: all 0.2s;
+}
+
+.btn-priority-medium.active {
+    background-color: #d97706 !important;
+    color: white !important;
+}
+
+.btn-priority-low {
+    border: 2.5px solid #16a34a !important;
+    color: #16a34a !important;
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 6px 16px;
+    transition: all 0.2s;
+}
+
+.btn-priority-low.active {
+    background-color: #16a34a !important;
+    color: white !important;
+}
+
+/* Nút Add cuối form */
+.btn-submit-task {
+    background-color: #64748b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.btn-submit-task:hover {
+    background-color: #475569;
+}
+
+/* Nút đóng X của form */
+.close-icon {
+    font-size: 24px;
+    color: #9ca3af;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-icon:hover {
+    color: #4b5563;
+}
